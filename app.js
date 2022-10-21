@@ -67,3 +67,36 @@ console.log(teen);
 
 //check that .eat() when isHungry == false works as expected
 teen.eat();
+
+
+
+class Phone{
+    constructor(model, price, releaseYear){
+        this.model = model;
+        this.price = price;
+        this.releaseYear = releaseYear;
+    }
+
+    makeCall(){
+        console.log("it is ringing");
+    }
+}
+
+class Android extends Phone{
+    constructor(model, price, releaseYear, appStore){
+        super(model, price, releaseYear);
+        this.appStore = appStore;
+    }
+}
+
+class Iphone extends Phone{
+    constructor(model, price, releaseYear, appStore){
+        super(model,price, releaseYear);
+        this.appStore = appStore;
+    }
+
+    installIphoneApp(){
+        console.log("install iphone app");
+    }
+}
+
